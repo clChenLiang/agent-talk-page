@@ -1,0 +1,36 @@
+{
+  "name": "separated-codex-conversation-viewer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"tsx src/server/server.ts --dev\" \"vite --host 127.0.0.1\"",
+    "start": "tsx src/server/server.ts",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest",
+    "dev:api": "tsx src/server/server.ts --dev",
+    "dev:web": "vite --host 127.0.0.1",
+    "viewer": "node scripts/codex-viewer.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "express": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "tsx": "latest",
+    "typescript": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "latest",
+    "@testing-library/react": "latest",
+    "@testing-library/user-event": "latest",
+    "@types/express": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "concurrently": "^9.2.1",
+    "jsdom": "latest",
+    "vitest": "latest"
+  }
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Codex Conversation Viewer"
+  short_description: "Open separated Codex conversation viewer"
+  default_prompt: "Use $codex-conversation-viewer to open the separated conversation viewer."
+policy:
+  allow_implicit_invocation: true
